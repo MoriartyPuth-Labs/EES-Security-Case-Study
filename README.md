@@ -1,11 +1,18 @@
 # 🛡️ ANPR Security Case Study: Information Exposure & BAC Audit
-**Target:** Ministry of Interior (MOI) - National ANPR & Logistics API
+**Target:** Ministry of Interior (MOI) - National ANPR 
 
-**Status:** 100% REMEDIATED (Confirmed April 7, 2026)
+**Status:** ✅ 100% REMEDIATED (Confirmed April 7, 2026)
+
+**Vulnerability:** Broken Access Control (BAC) / Information Exposure
+
+**Severity:** 🔴 Critical (9.8/10)
+
+![Security Status](https://img.shields.io/badge/Security-Verified_Patch-success?style=for-the-badge&logo=github)
+![Vulnerability](https://img.shields.io/badge/Vulnerability-BAC-red?style=for-the-badge)
 
 ---
 
-## 📝 Project Overview
+## 📝 Executive Summary
 This repository documents a security assessment of a government-integrated **Automatic Number Plate Recognition (ANPR)** and parking management system. The audit focused on the API layer (`Port 1234`) responsible for vehicle-to-officer mapping and organizational logistics. 
 
 This case study is a prime example of **Successful Responsible Disclosure**, resulting in a total system lockdown within 24 hours of reporting.
@@ -22,8 +29,8 @@ The assessment followed a **Non-Intrusive Black-Box** approach, utilizing the fo
 
 ---
 
-## 🛠️ Custom Tooling: `bubble scanner`
-During this audit, a custom automation utility—**bubble scanner**—was developed to handle high-velocity JSON parsing and IDOR validation.
+## 🛠️ Custom Tooling
+During this audit, a custom automation utility [Bubble-Scanner](https://github.com/MoriartyPuth/bubble-scanner) was used to handle high-velocity JSON parsing and IDOR validation.
 
 **Key Features:**
 * **Recursive Crawler:** Mapped 100+ Bureau and Department hierarchies via integer incrementation.
@@ -89,10 +96,20 @@ Before the patch, the following metadata was publicly retrievable:
 ## 🔧 Remediation Process
 Following disclosure, the MOI IT team implemented a Global Remediation Strategy:
 
-* **Auth-Wall Implementation:** Applied strict authenticated() rules to all /api/v1/** sub-paths.
+* **Auth-Wall Implementation:** Applied strict `authenticated()` rules to all `/api/v1/**` sub-paths.
 
-* **Proxy Restriction:** Configured Nginx to return 405 Method Not Allowed for all /actuator paths.
+* **Proxy Restriction:** Configured Nginx to return `405 Method Not Allowed` for all `/actuator` paths.
 
-* **Search Logic Nullification:** Updated the search controller to return an empty array [] regardless of query string.
+* **Search Logic Nullification:** Updated the search controller to return an empty array `[]` regardless of query string.
 
-* **Structural Lockdown:** Closed the final leaks in the /bureaus and /positions endpoints.
+* **Structural Lockdown:** Closed the final leaks in the `/bureaus` and `/positions` endpoints.
+
+The system is now successfully hardened against unauthenticated discovery and metadata scraping.
+
+---
+
+## 🎖️ Final Project Status
+> **Security Audit:** Complete  
+> **Data Integrity:** Secured
+
+Disclaimer: This research was conducted for educational and security-hardening purposes. All activities complied with responsible disclosure standards.
