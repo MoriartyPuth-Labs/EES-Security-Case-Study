@@ -1,7 +1,7 @@
-# 🛡️ ANPR Security Case Study: Information Exposure & BAC Audit
-**Target:** Ministry of Interior (MOI) - National ANPR 
+# 🛡️ EES Security Case Study: Information Exposure & BAC Audit
+**Target:** [Government Entry Exit System (EES)](https://ees.interior.gov.kh/client)
 
-**Status:** ✅ 100% REMEDIATED (Confirmed April 7, 2026)
+**Status:** ✅ COMPLETED, FIXED, & VERIFIED (Confirmed April 7, 2026)
 
 **Vulnerability:** Broken Access Control (BAC) / Information Exposure
 
