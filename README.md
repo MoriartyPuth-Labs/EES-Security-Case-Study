@@ -1,7 +1,6 @@
 <div align="center">
 
-# 🛡️ Full-Stack Security Assessment
-## Government ANPR Entry/Exit System (EES)
+# 🛡️ Full-Stack Security Assessment: Government ANPR Entry/Exit System (EES)
 ### Ministry of Interior — Cambodia
 
 [![Target](https://img.shields.io/badge/Target-EES_ANPR_System-blue?style=for-the-badge&logo=globe)](https://ees.interior.gov.kh/client)
@@ -194,3 +193,19 @@ The `/actuator` directory was publicly accessible, leaking:
 ---
 
 > **Disclaimer:** This assessment was conducted under responsible disclosure principles for educational and security-hardening purposes. No data was exfiltrated or retained. All findings were reported directly to the system owner prior to publication.
+
+---
+
+## 👤 Author
+
+<div align="center">
+
+**Eav Puthcambo**
+<br/>
+AUPP Cybersecurity Programme
+<br/>
+American University of Phnom Penh
+
+[![GitHub](https://img.shields.io/badge/GitHub-MoriartyPuth--Labs-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/MoriartyPuth-Labs)
+
+</div>
