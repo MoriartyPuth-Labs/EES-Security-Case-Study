@@ -6,7 +6,7 @@
 [![Target](https://img.shields.io/badge/Target-EES_ANPR_System-blue?style=for-the-badge&logo=globe)](https://ees.interior.gov.kh/client)
 [![Web](https://img.shields.io/badge/Surface-Web_API-orange?style=for-the-badge&logo=springboot)]()
 [![Mobile](https://img.shields.io/badge/Surface-Android_App-green?style=for-the-badge&logo=android)]()
-[![Severity](https://img.shields.io/badge/Severity-Critical_9.8%2F10-red?style=for-the-badge)]()
+[![Severity](https://img.shields.io/badge/Severity-Critical_7.5%2F10-red?style=for-the-badge)]()
 [![Status](https://img.shields.io/badge/Status-Patched_%26_Verified-success?style=for-the-badge&logo=checkmarx)]()
 [![Disclosure](https://img.shields.io/badge/Disclosure-Responsible-blueviolet?style=for-the-badge)]()
 
